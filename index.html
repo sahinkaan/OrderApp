@@ -1,0 +1,54 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <!-- google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=Smythe&display=swap" rel="stylesheet">
+        <!-- Font Awesome CDN -->
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+       
+    </head>
+    <body>
+        <header>
+            <div class="header-text">
+                <h1>Kaan's Diner</h1>
+                <h3>The best burgers and pizzas in town</h3>
+            </div>
+        </header>
+        <div class="menu" id="menu">
+            <!-- menu items here -->
+        </div>
+        <div class="payment-modal" id="payment-modal">
+            <div class="payment-container" id="payment-container">
+                <button class="button-payment-close" id="button-payment-close">X</button>
+                <h2 class="center-text">Enter card details</h2>
+                <form class="payment-form" id="payment-form">
+                    <input 
+                        class="payment-form-item" 
+                        type="text" 
+                        name="name" 
+                        id="input-name"
+                        placeholder="Enter your name" 
+                        required>
+                    <input 
+                        class="payment-form-item" 
+                        type="text" 
+                        id="input-card-number"
+                        placeholder="Enter your card number" 
+                        required>
+                    <input 
+                        class="payment-form-item" 
+                        type="text" 
+                        id="input-cvv"
+                        placeholder="Enter CVV" 
+                        required>
+                    <button class="button pay-button" type="submit">Pay</button>
+                </form>
+            </div>
+        </div>
+        <div class="order-details hidden" id="order-details"></div>
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+
